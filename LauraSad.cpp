@@ -4,24 +4,24 @@
 #include <conio.h>
 //PlaySound(TEXT("Xxxtentacion_Jocelyn Flores.wav"),NULL,SND_ASYNC);
 
-void gotoxy(int x, int y);
-void Corazon();
-void Linea_1();
-void Linea_2();
-void Linea_3();
-void Linea_4();
-void Linea_5();
-void Linea_6();
-void Linea_7();
-void Linea_8();
-void Linea_9();
-void Linea_10();
-void Linea_11();
-void Linea_Todas();
-void Animacion(char p);
+void gotoxy(int x, int y);//Funcion para posicionar los caracteres en coordenadas especificas
+void Corazon();//Dibuja la silueta del corazon
+void Linea_1();//Dibuja la barra del porcentaje  - 99%
+void Linea_2();// 90%
+void Linea_3();// 80%
+void Linea_4();// 70%
+void Linea_5();// 60%
+void Linea_6();// 50%
+void Linea_7();// 40%
+void Linea_8();// 30%
+void Linea_9();// 20%
+void Linea_10();// 10%
+void Linea_11();// 0%
+void Linea_Todas();//Llama a todas las linea (ahorra lineas)
+void Animacion(char p);//Funcion que anima la transicion entre porcentajes, se le pasa como parametro el signo de porcentaje 
 
 int main (){
-	char pregunta,p=37,q=168,n=165;
+	char pregunta,p=37,q=168,n=165;//Variables para la respuesta y los sibmolos del sistema
 	system("color f3");
 	Corazon();
 	gotoxy(41,3);
@@ -29,8 +29,8 @@ int main (){
 	Linea_Todas();
 	gotoxy(39,17);
 	printf("%cESTAS SEGURO DE BORRARLOS?: [  ] SI / NO\b\b\b\b\b\b\b\b\b\b\b",q);
-	scanf("%c",&pregunta);
-	fflush(stdin);
+	scanf("%c",&pregunta);//Almacena el caracter
+	fflush(stdin);//Borra el buffer
 	
 	if(pregunta=='n' || pregunta=='N'){
 		Corazon();
@@ -56,185 +56,185 @@ void gotoxy(int x, int y){
 void Corazon(){
 	system("cls");
 	gotoxy(45,5);
-	printf("    €€€€€€      €€€€€€");
+	printf("    √õ√õ√õ√õ√õ√õ      √õ√õ√õ√õ√õ√õ");
 	gotoxy(45,6);
-	printf("  €€      €€  €€      €€");
+	printf("  √õ√õ      √õ√õ  √õ√õ      √õ√õ");
 	gotoxy(45,7);
-	printf("€€          €€          €€");
+	printf("√õ√õ          √õ√õ          √õ√õ");
 	gotoxy(45,8);
-	printf("€€                      €€");//11
+	printf("√õ√õ                      √õ√õ");//11
 	gotoxy(45,9);
-	printf("€€                      €€");
+	printf("√õ√õ                      √õ√õ");
 	gotoxy(45,10);
-	printf("  €€                  €€");
+	printf("  √õ√õ                  √õ√õ");
 	gotoxy(45,11);
-	printf("    €€              €€");
+	printf("    √õ√õ              √õ√õ");
 	gotoxy(45,12);
-	printf("      €€          €€");
+	printf("      √õ√õ          √õ√õ");
 	gotoxy(45,13);
-	printf("        €€      €€");
+	printf("        √õ√õ      √õ√õ");
 	gotoxy(45,14);
-	printf("          €€  €€");
+	printf("          √õ√õ  √õ√õ");
 	gotoxy(45,15);
-	printf("            €€");
+	printf("            √õ√õ");
 }
 
 void Linea_1(){
 	gotoxy(47,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(47,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(47,9);
-	printf("€€");
+	printf("√õ√õ");
 }
 
 void Linea_2(){
 	gotoxy(49,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(49,7);
-	printf("∞∞");
+	printf("¬∞¬∞");
 	gotoxy(49,8);
-	printf("∞∞");
+	printf("¬∞¬∞");
 	gotoxy(49,9);
-	printf("∞∞");
+	printf("¬∞¬∞");
 	gotoxy(49,10);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_3(){
 	gotoxy(51,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(51,7);
-	printf("∞∞");
+	printf("¬∞¬∞");
 	gotoxy(51,8);
-	printf("∞∞");
+	printf("¬∞¬∞");
 	gotoxy(51,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(51,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(51,11);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_4(){
 	gotoxy(53,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,11);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(53,12);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_5(){
 	gotoxy(55,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,11);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,12);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(55,13);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_6(){
 	gotoxy(57,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,11);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,12);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,13);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(57,14);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_7(){
 	gotoxy(59,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,11);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,12);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(59,13);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_8(){
 	gotoxy(61,5);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,11);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(61,12);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_9(){
 	gotoxy(63,5);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,10);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(63,11);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_10(){
 	gotoxy(65,5);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(65,6);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(65,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(65,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(65,9);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(65,10);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_11(){
 	gotoxy(67,7);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(67,8);
-	printf("€€");
+	printf("√õ√õ");
 	gotoxy(67,9);
-	printf("€€");
+	printf("√õ√õ");
 }
 void Linea_Todas(){
 	Linea_1();
@@ -351,28 +351,27 @@ void Animacion(char p){
 	Linea_1();
 	gotoxy(52,17);
 	printf("BORRANDO 99%c",p);
-	Sleep(2070);
+	Sleep(3180);// ESTE TIEMPO DEPENDE DE LA VELOCIDAD DE PROCESAMIENTO DE LA COMPUTADORA; lo ideal es que cambie con la parte de la cancion
 	system("cls");
 	system("color f4");
 	gotoxy(30,3);
-	printf("      €€         €€  €€€€€€  €€€€    €€€€    €€€€€€  €€€€    €€");
+	printf("      √õ√õ         √õ√õ  √õ√õ√õ√õ√õ√õ  √õ√õ√õ√õ    √õ√õ√õ√õ    √õ√õ√õ√õ√õ√õ  √õ√õ√õ√õ    √õ√õ");
 	gotoxy(30,4);
-	printf("     €€€€            €€      €€  €€  €€  €€  €€  €€  €€  €€  €€");
+	printf("     √õ√õ√õ√õ            √õ√õ      √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ");
 	gotoxy(30,5);
-	printf("    €€  €€       €€  €€      €€  €€  €€  €€  €€  €€  €€  €€  €€");
+	printf("    √õ√õ  √õ√õ       √õ√õ  √õ√õ      √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ");
 	gotoxy(30,6);
-	printf("   €€  ≥ €€      €€  €€€€€€  €€€€    €€€€    €€  €€  €€€€    €€");
+	printf("   √õ√õ  ¬≥ √õ√õ      √õ√õ  √õ√õ√õ√õ√õ√õ  √õ√õ√õ√õ    √õ√õ√õ√õ    √õ√õ  √õ√õ  √õ√õ√õ√õ    √õ√õ");
 	gotoxy(30,7);
-	printf("  €€   ≥  €€     €€  €€      €€  €€  €€  €€  €€  €€  €€  €€  €€");
+	printf("  √õ√õ   ¬≥  √õ√õ     √õ√õ  √õ√õ      √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ");
 	gotoxy(30,8);
-	printf(" €€    o   €€    €€  €€      €€  €€  €€  €€  €€  €€  €€  €€    ");
+	printf(" √õ√õ    o   √õ√õ    √õ√õ  √õ√õ      √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ    ");
 	gotoxy(30,9);
-	printf("€€€€€€€€€€€€€€   €€  €€€€€€  €€  €€  €€  €€  €€€€€€  €€  €€  €€");
+	printf("√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ√õ   √õ√õ  √õ√õ√õ√õ√õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ  √õ√õ√õ√õ√õ√õ  √õ√õ  √õ√õ  √õ√õ");
 	gotoxy(47,11);
 	printf("EL ARCHIVO ES DEMASIADO GRANDE...");
 	gotoxy(26,13);
 	printf("CIERRE LA APLICACION PARA CANCELAR LA OPERACION Y REINTENTAR MAS TARDE");
 	gotoxy(59,15);
-	Sleep(102500);
+	Sleep(102500);// Tiempo en que se acaba la cancion
 }
-
